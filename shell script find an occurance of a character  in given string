@@ -1,0 +1,20 @@
+#!/bin/bash
+
+string="Hello, World!"
+search_char="o"
+
+# Initialize a counter variable
+count=0
+
+# Iterate over each character in the string
+for (( i=0; i<${#string}; i++ )); do
+    # Check if the current character matches the search character
+    if [[ ${string:i:1} == $search_char ]]; then
+        # Increment the counter if there is a match
+        ((count++))
+    fi
+done
+
+echo "Original string: $string"
+echo "Search character: $search_char"
+echo "Occurrence count: $count"
