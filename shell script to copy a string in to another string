@@ -1,0 +1,5 @@
+echo "Enter the source string:"
+read source_string
+destination_string="$source_string"
+
+echo "Copied string: $destination_string"
