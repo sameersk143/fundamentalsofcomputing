@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Read the input string
+echo "Enter a string:"
+read input_string
+
+# Read the character to replace
+echo "Enter the character to replace:"
+read replace_char
+
+# Read the replacement character
+echo "Enter the replacement character:"
+read replacement_char
+
+# Replace the character in the string
+replaced_string="${input_string//$replace_char/$replacement_char}"
+
+# Print the replaced string
+echo "Replaced string: $replaced_string"
