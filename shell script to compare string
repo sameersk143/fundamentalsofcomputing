@@ -1,0 +1,18 @@
+#!/bin/bash
+
+string1="Hello"
+string2="World"
+
+# Compare if string1 is equal to string2
+if [ "$string1" = "$string2" ]; then
+  echo "Strings are equal."
+else
+  echo "Strings are not equal."
+fi
+
+# Compare if string1 is empty
+if [ -z "$string1" ]; then
+  echo "String is empty."
+else
+  echo "String is not empty."
+fi
