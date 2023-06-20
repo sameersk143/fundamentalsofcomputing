@@ -1,0 +1,11 @@
+#!/bin/bash
+
+string="Hello, World!"
+replace_char="o"
+replacement_char="X"
+
+# Replace the character in the string
+new_string="${string//$replace_char/$replacement_char}"
+
+echo "Original string: $string"
+echo "Replaced string: $new_string"
