@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Function definition
+funct1() {
+    echo "This is funct1()."
+    echo "Hello, $1!"
+}
+
+# Main script
+
+# Call funct1() with an argument
+funct1 "John"
+
+# Call funct1() without an argument
+funct1
