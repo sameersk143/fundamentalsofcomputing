@@ -1,0 +1,6 @@
+echo "Enter a string:"
+read input_string
+
+upper_case_string=$(echo "$input_string" | tr '[:lower:]' '[:upper:]')
+
+echo "Upper case string: $upper_case_string"
