@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Read the input string
+echo "Enter a string:"
+read input_string
+
+# Read the character to find
+echo "Enter the character to find:"
+read search_char
+
+# Count the occurrence of the character
+occurrence=$(grep -o "$search_char" <<< "$input_string" | wc -l)
+
+# Print the occurrence count
+echo "Occurrence of '$search_char' in the string: $occurrence"
