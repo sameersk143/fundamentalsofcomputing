@@ -1,0 +1,6 @@
+echo "Enter a string:"
+read string
+
+length=${#string}
+
+echo "Length of the string is: $length"
