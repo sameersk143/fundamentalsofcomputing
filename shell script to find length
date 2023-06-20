@@ -1,0 +1,8 @@
+#!/bin/bash
+
+string="Hello, World!"
+
+# Find the length of the string
+length=$(expr length "$string")
+
+echo "Length of the string is $length"
