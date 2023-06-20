@@ -1,0 +1,8 @@
+#!/bin/bash
+
+string="hello, world!"
+
+# Convert lowercase string to uppercase
+uppercase=$(echo "$string" | tr '[:lower:]' '[:upper:]')
+
+echo "Uppercase string: $uppercase"
